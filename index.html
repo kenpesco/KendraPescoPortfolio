@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Istok Web:ital,wght@0,400;1,400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="kp-home-page">
+      <img class="gradient-icon" alt="" src="./public/gradient@2x.png" />
+
+      <img
+        class="dinnerdate-2-1-icon"
+        alt=""
+        src="./public/dinnerdate-2-1@2x.png"
+        data-scroll-to="dinnerdate21Image"
+      />
+
+      <section class="content">
+        <div class="navigation-bar">
+          <div class="navigation-bar-child"></div>
+          <header class="brand-logo">
+            <a class="kp" id="kPText">KP</a>
+            <div class="social">
+              <div class="portfolio-about">
+                <a class="portfolio" id="portfolioText">Portfolio</a>
+                <a class="about" id="aboutText">About</a>
+              </div>
+            </div>
+          </header>
+          <div class="social-icons">
+            <div class="social-icon">
+              <img
+                class="mdiinstagram-icon"
+                loading="lazy"
+                alt=""
+                src="./public/mdiinstagram.svg"
+              />
+
+              <img
+                class="rifacebook-fill-icon"
+                loading="lazy"
+                alt=""
+                src="./public/rifacebookfill.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="profile">
+        <div class="profile-details">
+          <div class="kendra-pesco" id="kendraPescoText">Kendra Pesco</div>
+          <div class="occupation">
+            <div class="d-artist">3D ARTIST</div>
+          </div>
+        </div>
+      </div>
+      <section class="my-works" data-scroll-to="myWorks">
+        <div class="my-works-child"></div>
+        <div class="work-examples">
+          <img class="gradient-icon1" alt="" src="./public/gradient-1@2x.png" />
+
+          <img
+            class="house-1-1-icon"
+            loading="lazy"
+            alt=""
+            src="./public/house-1-1@2x.png"
+          />
+
+          <img
+            class="emageweapon-1-1-icon"
+            loading="lazy"
+            alt=""
+            src="./public/emageweapon-1-1@2x.png"
+          />
+
+          <img
+            class="dinnerdate-1-1-icon"
+            loading="lazy"
+            alt=""
+            src="./public/dinnerdate-1-1@2x.png"
+          />
+
+          <img
+            class="classroom-1-1-icon"
+            loading="lazy"
+            alt=""
+            src="./public/classroom-1-1@2x.png"
+          />
+        </div>
+        <div class="my-works1">My Works</div>
+        <i class="a-compilation-of"
+          >A compilation of my 3D works. Each piece showcases my passion for
+          detail and storytelling, blending creativity with technical precision.
+        </i>
+      </section>
+      <section class="about-me" data-scroll-to="aboutMe">
+        <div class="about-details">
+          <div class="hello-im-kendra-container">
+            <p class="hello-im-kendra">
+              Hello! I'm Kendra Pesco, a passionate 3D artist with a deep love
+              for bringing ideas to life through the power of digital art. My
+              journey into the world of 3D modeling and animation has been
+              fueled by an unending curiosity and a desire to create immersive,
+              visually captivating experiences. Whether it's character design,
+              environment creation, or intricate animations, I strive to push
+              the boundaries of my creativity with every project.
+            </p>
+            <p class="hello-im-kendra">&nbsp;</p>
+            <p class="hello-im-kendra">
+              Currently, I'm honing my skills as a computer animation student,
+              working on exciting projects that challenge me to grow and
+              innovate. My work is not just about making things look good—it's
+              about telling stories, evoking emotions, and creating art that
+              resonates with people.
+            </p>
+            <p class="hello-im-kendra">&nbsp;</p>
+            <p class="hello-im-kendra">
+              Feel free to explore my portfolio to see some of my favorite
+              projects. If you’re interested in collaborating or just want to
+              chat about all things 3D, don't hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+        <div class="about-me1">About Me</div>
+        <div class="transformation">
+          <img class="gradient-icon2" alt="" src="./public/gradient-2@2x.png" />
+
+          <img
+            class="artist-turns-popular-character"
+            loading="lazy"
+            alt=""
+            src="./public/artist-turns-popular-characters-from-movies-tv-series-and-animation-into-anime-30-pics-1@2x.png"
+          />
+
+          <img
+            class="ggfacebook-icon"
+            loading="lazy"
+            alt=""
+            src="./public/ggfacebook.svg"
+          />
+
+          <img
+            class="simple-iconsx"
+            loading="lazy"
+            alt=""
+            src="./public/simpleiconsx.svg"
+          />
+
+          <img
+            class="icoutline-email-icon"
+            loading="lazy"
+            alt=""
+            src="./public/icoutlineemail.svg"
+          />
+
+          <img
+            class="mdiinstagram-icon1"
+            loading="lazy"
+            alt=""
+            src="./public/mdiinstagram-1.svg"
+          />
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var kPText = document.getElementById("kPText");
+      if (kPText) {
+        kPText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='dinnerdate21Image']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+
+      var portfolioText = document.getElementById("portfolioText");
+      if (portfolioText) {
+        portfolioText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='myWorks']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='aboutMe']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+
+      var kendraPescoText = document.getElementById("kendraPescoText");
+      if (kendraPescoText) {
+        kendraPescoText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='aboutMe']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
